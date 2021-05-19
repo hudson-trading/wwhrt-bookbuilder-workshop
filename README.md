@@ -33,15 +33,11 @@ respond to queries about the current best orders to buy and sell.
 
 # The Data
 
-Notice:
-> We will provide a sample data file for your implementation to process. Please
-> check back later.
-
-These files record events sent from the exchange.  There are three
-types of events that you will need to handle: when orders are
-**added** to the book, **deleted** from the book, or **updated** while
-remaining on the book. You can find more information about these events in the
-[`Events.h`](./Events.h) header.
+We have provided sample data from a real cryptocurrency exchange.  These files
+record events sent from the exchange.  There are three types of events that you
+will need to handle: when orders are **added** to the book, **deleted** from
+the book, or **updated** while remaining on the book. You can find more
+information about these events in the [`Events.h`](./Events.h) header.
 
 # Running the Code
 

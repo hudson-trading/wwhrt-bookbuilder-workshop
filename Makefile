@@ -105,9 +105,7 @@ gperftools-2.9.1:
 	tar xf ./gperftools-2.9.1.tar.gz
 
 data/btcusd.medium.data data/btcusd.medium.golden.out:
-	@echo "We have not yet published the sample data."
-	@echo "Check back later and run 'git pull' to update once we've published it."
-	@exit 1
+	tar xf ./data.tar.gz
 
 .PHONY: all clean measure check profile profile_functions profile_lines gdb
 .PHONY: gdb_optimized gdb_unoptimized
