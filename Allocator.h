@@ -19,9 +19,7 @@ template <typename T> struct Allocator {
     Allocator() {}
 
     [[nodiscard]] T* allocate(std::size_t n) {
-        // No support for allocating arrays
-        (void) n;
-        return static_cast<T*>(::operator new(sizeof(T)));
+        return static_cast<T*>(::operator new(n * sizeof(T)));
     }
 
     void deallocate(T* p, std::size_t) { ::operator delete(p); }
